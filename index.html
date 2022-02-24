@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>QR code component</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@600&display=swap");
+      body {
+        height: 100vh;
+        width: 100vw;
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        background-color: hsl(212, 45%, 89%);
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-left: 100px;
+        font-size: 20px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        border-radius: 20px;
+        text-align: center;
+        width: 300px;
+        height: 500px;
+        background-color: white;
+      }
+
+      .QRCODE {
+        height: 280px;
+        width: 280px;
+
+        margin-top: 10px;
+        border-radius: 10px;
+      }
+
+      .title {
+        color: hsl(218, 44%, 22%);
+        font-weight: 700;
+        font-size: 21px;
+        margin-bottom: 5px;
+      }
+      .descText {
+        color: hsl(220, 15%, 55%);
+        font-weight: 400;
+        font-size: 14px;
+      }
+
+      @media only screen and (max-width: 375px) {
+        .container {
+          /* height: 100%;
+        width: 100%;
+        display: flex; */
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          flex-wrap: wrap;
+          background-color: hsl(212, 45%, 89%);
+        }
+        .attribution {
+          font-size: 11px;
+          text-align: center;
+          margin-left: 0;
+          padding-top: 50px;
+          justify-self: flex-end;
+
+          /* font-size: 14px; */
+        }
+        .card {
+          display: flex;
+          flex-direction: column;
+
+          align-items: center;
+          border-radius: 20px;
+          text-align: center;
+          width: 240px;
+          height: 410px;
+          background-color: white;
+        }
+        .QRCODE {
+          height: 220px;
+          width: 220px;
+
+          margin-top: 10px;
+          border-radius: 10px;
+        }
+
+        .title {
+          color: hsl(218, 44%, 22%);
+          font-weight: 700;
+          font-size: 16px;
+          margin-bottom: 5px;
+        }
+        .descText {
+          color: hsl(220, 15%, 55%);
+          font-weight: 400;
+          font-size: 12px;
+        }
+      }
+      @media only screen and (max-width: 1000px) {
+        .container {
+          /* height: 100%;
+        width: 100%;
+        display: flex; */
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          flex-wrap: wrap;
+          background-color: hsl(212, 45%, 89%);
+        }
+        .attribution {
+          font-size: 11px;
+          text-align: center;
+          margin-left: 0;
+          padding-top: 50px;
+          justify-self: flex-end;
+
+          /* font-size: 14px; */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img class="QRCODE" src="./images/image-qr-code.png" />
+        <p class="title">
+          Improve your front-end <br />skills by building projects
+        </p>
+        <p class="descText">
+          Scan the QR code to visit Frontend <br />Mentor and take your coding
+          skills to <br />the next level
+        </p>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Hassam Sohail</a>.
+      </div>
+    </div>
+  </body>
+</html>
